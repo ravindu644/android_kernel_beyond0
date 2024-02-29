@@ -30,7 +30,6 @@ rm -rf out && mkdir out
 
 dtb_img() {
 	chmod +777 $dt_tool/* -R
-	$dt_tool/mkdtimg cfg_create $work_dir/out/dtbo_beyond0.img $dt_tool/beyond0.cfg -d $work_dir/arch/arm64/boot/dts/samsung
 	$dt_tool/mkdtimg cfg_create $work_dir/out/dtb_beyond0.img $dt_tool/exynos9820.cfg -d $work_dir/arch/arm64/boot/dts/exynos
 	
 	}
